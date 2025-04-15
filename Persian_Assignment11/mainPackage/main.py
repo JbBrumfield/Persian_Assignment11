@@ -11,3 +11,20 @@
 # Citations: {"Stack Overflow" is not sufficient. Provide repeatable links, book page #, etc.}
 
 # Anything else that's relevant: hi
+
+from dataPackage.data_cleaner import *
+
+
+
+def main():
+    input_file = './Data/fuelPurchaseData.csv'
+    output_file = './Data/cleanedData.csv'
+    anomaly_file = './Data/dataAnomalies.csv'
+
+    cleaner = DataCleaner(input_file, output_file, anomaly_file)
+    cleaner.clean_data()
+    print("Data cleaned and saved to cleanedData.csv")
+
+
+if __name__ == "__main__":
+    main()

@@ -21,13 +21,37 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="dataPackage\data_cleaner.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dataPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mainPackage\utils.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="mainPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="mainPackage\main.py" />
+    <Compile Include="pepsiAnomalyPackage\pepsi_filter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pepsiAnomalyPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="zipPackage\zip_code_lookup.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="zipPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="dataPackage\" />
     <Folder Include="mainPackage\" />
+    <Folder Include="pepsiAnomalyPackage\" />
+    <Folder Include="zipPackage\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
