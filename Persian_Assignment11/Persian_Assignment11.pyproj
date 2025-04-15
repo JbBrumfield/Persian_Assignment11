@@ -50,8 +50,12 @@
   <ItemGroup>
     <Folder Include="dataPackage\" />
     <Folder Include="mainPackage\" />
+    <Folder Include="Data\" />
     <Folder Include="pepsiAnomalyPackage\" />
     <Folder Include="zipPackage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\fuelPurchaseData.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
