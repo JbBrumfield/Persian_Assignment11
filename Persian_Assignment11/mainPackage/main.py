@@ -14,8 +14,6 @@
 
 from dataPackage.data_cleaner import *
 
-
-
 def main():
     input_file = './Data/fuelPurchaseData.csv'
     output_file = './Data/cleanedData.csv'
@@ -24,7 +22,6 @@ def main():
     cleaner = DataCleaner(input_file, output_file, anomaly_file)
     cleaner.clean_data()
     print("Data cleaned and saved to cleanedData.csv")
-
 
 if __name__ == "__main__":
     main()

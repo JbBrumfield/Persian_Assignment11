@@ -1,4 +1,4 @@
-import pandas as pd
+﻿import pandas as pd
 
 def write_csv(df: pd.DataFrame, file_path: str):
     try:
