@@ -42,7 +42,7 @@ class ZipCodeLookup:
 
         missing_count = self.df[self.df['Full Address'].str.contains(r'\b\d{5}\b', na=False) == False].shape[0]
         print(f"Found {missing_count} rows with missing ZIP codes.")
-        print("🚀 Starting ZIP code lookup for missing entries...\n")
+        print("Starting ZIP code lookup for missing entries...\n")
 
         missing_zip_indices = [
             idx for idx in self.df.index
@@ -61,7 +61,7 @@ class ZipCodeLookup:
                     updated_address = address.strip().rstrip(',') + f" {zip_code}"
                     self.df.at[index, 'Full Address'] = updated_address
                     updated_rows.append((index, updated_address))
-                    print(f"✅ Added ZIP code '{zip_code}' to address at row {index}")
+                    print(f"Added ZIP code '{zip_code}' to address at row {index}")
 
-        print(f"\n✨ Completed ZIP code updates. {len(updated_rows)} missing ZIP(s) added.")
+        print(f"\n Completed ZIP code updates. {len(updated_rows)} missing ZIP(s) added.")
         return self.df, updated_rows
