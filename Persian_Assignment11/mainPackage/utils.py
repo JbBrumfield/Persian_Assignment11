@@ -6,5 +6,3 @@ def write_csv(df: pd.DataFrame, file_path: str):
         print(f"Saved file to {file_path}")
     except Exception as e:
         print(f"Error saving file {file_path}: {e}")
-
-
