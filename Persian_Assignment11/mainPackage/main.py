@@ -5,7 +5,13 @@
 # Due Date:   4/17/2025
 # Course #/Section:   IS 4010 001
 # Semester/Year:   Spring 2025
+# Brief Description of the assignment:  The assignment removes duplicate rows, makes the price two decimal points, and selects the rows where people accidentally bought pepsi instead of fuel and creates a new csv called dataanamolies and datacleaned.
 
+
+# Brief Description of what this module does. Shows the different csv files and file locations
+# Citations: {"Stack Overflow" is not sufficient. Provide repeatable links, book page #, etc.}
+
+# Anything else that's relevant:
 from dataPackage.data_cleaner import *
 
 def main():
